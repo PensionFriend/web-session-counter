@@ -43,7 +43,7 @@ class WebSessionCounter {
     }
 
     set lastActive(time) {
-        if(val && val.length > 1) {
+        if(time && time.length > 1) {
             window.localStorage.setItem('hypofriend_user_web_session_last_active', time.toISOString());
         }
     }
