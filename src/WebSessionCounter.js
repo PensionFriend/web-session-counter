@@ -43,7 +43,9 @@ class WebSessionCounter {
     }
 
     set lastActive(time) {
-        window.localStorage.setItem('hypofriend_user_web_session_last_active', time.toISOString());
+        if(val && val.length > 1) {
+            window.localStorage.setItem('hypofriend_user_web_session_last_active', time.toISOString());
+        }
     }
 
     get lastUtmCampaign() {
@@ -51,7 +53,9 @@ class WebSessionCounter {
     }
 
     set lastUtmCampaign(val) {
-        window.localStorage.setItem('hypofriend_user_web_session_utm_campaign', val);
+        if(val && val.length > 1) {
+            window.localStorage.setItem('hypofriend_user_web_session_utm_campaign', val);
+        }
     }
 
     get currentUtmCampaign() {
@@ -66,7 +70,9 @@ class WebSessionCounter {
     }
 
     set lastUtmSource(val) {
-        window.localStorage.setItem('hypofriend_user_web_session_utm_source', val);
+        if(val && val.length > 1) {
+            window.localStorage.setItem('hypofriend_user_web_session_utm_source', val);
+        }
     }
 
     get currentUtmSource() {
@@ -81,7 +87,9 @@ class WebSessionCounter {
     }
 
     set lastUtmMedium(val) {
-        window.localStorage.setItem('hypofriend_user_web_session_utm_medium', val);
+        if(val && val.length > 1) {
+            window.localStorage.setItem('hypofriend_user_web_session_utm_medium', val);
+        }
     }
 
     get currentUtmMedium() {
