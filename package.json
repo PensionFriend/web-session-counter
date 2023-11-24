@@ -1,9 +1,9 @@
 {
-  "name": "@hypofriend/web-session-counter",
+  "name": "@pensionfriend/web-session-counter",
   "version": "1.1.5",
   "private": false,
   "contributors": [
-    "Pavel Jurasek <pavel@hypofriend.de>"
+    "Pavel Jurasek <pavel@pensionfriend.de>"
   ],
   "description": "Utility to count a user's web sessions based on the definition GA uses. Edit",
   "main": "lib/index.js",
